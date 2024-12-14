@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahan Singh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #2c3e50, #34495e);
+            padding: 50px 10%;
+            color: white;
+            text-align: center;
+        }
+
+        h1.an {
+            font-size: 48px;
+            animation: changeColor 3s infinite;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        h2.ab {
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 12px 25px;
+            border-radius: 30px;
+            background-color: #1abc9c;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #16a085;
+        }
+
+        @keyframes changeColor {
+            0% {
+                color: #ff6347;
+            }
+
+            25% {
+                color: #1e90ff;
+            }
+
+            50% {
+                color: #32cd32;
+            }
+
+            75% {
+                color: #f39c12;
+            }
+
+            100% {
+                color: #1ed5c0;
+            }
+        }
+
+      
+        #about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        #about img {
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+            margin-bottom: 30px;
+            border: 5px solid #2c3e50;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        #about p {
+            font-size: 18px;
+            line-height: 1.6;
+            opacity: 0.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        
+        #skills {
+            background-color: #ecf0f1;
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        #skills h2 {
+            font-size: 36px;
+            margin-bottom: 50px;
+            font-weight: 600;
+        }
+
+        .skill-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background-color: #3498db;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .skill p {
+            font-size: 16px;
+            opacity: 0.8;
+        }
+
+        
+        #contact {
+            padding: 80px 10%;
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        #contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        #contact p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        #contact a {
+            color: #1abc9c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #34495e;
+            color: white;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 50px 10%;
+            }
+
+            #about,
+            #skills,
+            #contact {
+                padding: 50px 10%;
+            }
+
+            .skill-list {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <header>
+        <h1 class="an"><b>Mahan Singh</b></h1>
+        <h2 class="ab">Web Designer & Developer</h2>
+        <div class="navbar">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    
+    <section id="about">
+        <img src="m4.jpg" alt="Mahan Singh">
+        <h2>About Me</h2>
+        <p>Hello! I'm Mahan Singh, a passionate web designer and developer. I like creating responsive websites and applications. I enjoy solving complex problems and creating innovative digital products.</p>
+    </section>
+
+    
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skill-list">
+            <div class="skill">
+                <h3>HTML & CSS</h3>
+                <p>Building beautiful, responsive websites with clean, semantic code.</p>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Creating interactive and dynamic web experiences with modern JS frameworks.</p>
+            </div>
+            <div class="skill">
+                <h3>C</h3>
+                <p>Having good command on C language.</p>
+            </div>
+            <div class="skill">
+                <h3>Java</h3>
+                <p>Learning JAVA for app development.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you’d like to work together or need a consultation, feel free to reach out!</p>
+        <p><a href="mailto:mahan.2428cse1312@kiet.edu">Email</a></p>
+        <p><a href="https://www.linkedin.com/in/mahan-singh">linkedin</a></p>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2024 Mahan Singh. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
